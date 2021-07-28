@@ -7,7 +7,7 @@
     background-color: #0271bc;
     text-align: center;
     line-height: 44px;
-    position: fixed;
+    position: fixed; /*ver porque no se queda fijo*/
 
     &-menu {
       width: 16px;
@@ -26,12 +26,18 @@
   justify-content: center;
   align-items: center;
   &__principal {
+    font-family: $font_RobotoSlab;
     text-transform: uppercase;
     font-size: 42px;
     width: 15ch;
     text-align: center;
+    margin: 5px;
   }
   &__subtitle {
+    font-family: $font-Roboto;
     font-size: 15px;
+    line-height: 21px;
+    margin: 5px;
+    text-align: center;
   }
 }
