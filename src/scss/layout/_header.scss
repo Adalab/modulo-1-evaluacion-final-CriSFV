@@ -1,0 +1,37 @@
+.header {
+  height: 100vh;
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    background-color: #0271bc;
+    text-align: center;
+    line-height: 44px;
+    position: fixed;
+
+    &-menu {
+      width: 16px;
+      height: 14px;
+    }
+  }
+}
+.header__title {
+  background-image: url("../../assets/images/cover.jpg");
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__principal {
+    text-transform: uppercase;
+    font-size: 42px;
+    width: 9ch;
+    text-align: center;
+  }
+  &__subtitle {
+    font-size: 15px;
+  }
+}
