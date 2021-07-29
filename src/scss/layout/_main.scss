@@ -16,17 +16,32 @@
     font-size: 18px;
     font-family: $font_Roboto;
   }
-  &__buttom {
+  &__button {
     margin-top: 30px;
     border: $color_buttom solid 2px;
     width: 76px;
     height: 45px;
-    border-radius: 45%;
+    border-radius: 25px;
     text-align: center;
     line-height: 45px;
     font-family: $font_Roboto;
-    color: $color_buttom;
+    font-size: 20px;
+    transition: transform linear 1s, background-color linear 1s,
+      font-size linear 1s;
+    &__link {
+      text-decoration: none;
+      color: $color_buttom;
+      transition: color linear 1s;
+    }
   }
+}
+.first__button:hover {
+  transform: scale(1.5);
+  background-color: $color_buttom;
+  font-size: 25px;
+}
+.first__button__link:hover {
+  color: #ffff;
 }
 
 .second {
@@ -45,7 +60,6 @@
     margin: auto;
   }
   &__article {
-    grid-column: span 3;
     width: 184px;
     margin: auto;
     text-align: center;
@@ -59,14 +73,32 @@
       font-size: 18px;
     }
   }
-  &__buttom {
-    background-color: $color_buttom;
-    width: 124px;
-    height: 45px;
-    border-radius: 20%;
-    text-align: center;
-    line-height: 45px;
+}
+
+.second__button {
+  margin: auto;
+  width: 174px;
+  height: 45px;
+  background-color: $color_buttom;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 60px;
+  transition: transform ease 1s, background-color ease 1s;
+
+  &__link {
     font-family: $font_Roboto;
+    font-size: 20px;
     color: #ffff;
+    text-decoration: none;
   }
+}
+
+.second__button:hover {
+  transform: scale(1.5);
+  background-color: #ffff;
+  border: black solid 1px;
+}
+.second__button__link:hover {
+  color: purple;
 }

@@ -1,22 +1,44 @@
+@keyframes giro {
+  from {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(270deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .footer {
   background-color: #304268;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffff;
+  color: #ffffff;
   line-height: 30px;
   font-family: $font_Roboto;
   &__icon {
-    background-color: #ffff;
+    background-color: #ffffff;
     width: 45px;
     height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transform: translateY(-22.5px);
+    transform: translateY(-25.5px);
+    animation: giro linear 2s infinite;
   }
+}
+.footer__icon__img {
+  transform: translateY(5px);
 }
 
 .footer__menu {
@@ -27,7 +49,7 @@
 .footer__menu__link {
   text-decoration: none;
   font-family: $font_Roboto;
-  color: #ffff;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
