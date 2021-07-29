@@ -1,4 +1,4 @@
-.main {
+.first {
   margin: 15px;
 
   &__tip {
@@ -18,13 +18,55 @@
   }
   &__buttom {
     margin-top: 30px;
-    border: #f26002 solid 2px;
+    border: $color_buttom solid 2px;
     width: 76px;
     height: 45px;
     border-radius: 45%;
     text-align: center;
     line-height: 45px;
     font-family: $font_Roboto;
-    color: #f26002;
+    color: $color_buttom;
+  }
+}
+
+.second {
+  line-height: 30px;
+  background-color: #eff9ff;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 45px;
+
+  &__title {
+    font-family: $font_RobotoSlab;
+    font-size: 24px;
+    width: 290px;
+    text-transform: capitalize;
+    margin: auto;
+  }
+  &__article {
+    grid-column: span 3;
+    width: 184px;
+    margin: auto;
+    text-align: center;
+
+    &__title {
+      font-family: $font_RobotoSlab;
+      font-size: 18px;
+    }
+    &__text {
+      font-family: $font_Roboto;
+      font-size: 18px;
+    }
+  }
+  &__buttom {
+    background-color: $color_buttom;
+    width: 124px;
+    height: 45px;
+    border-radius: 20%;
+    text-align: center;
+    line-height: 45px;
+    font-family: $font_Roboto;
+    color: #ffff;
   }
 }
