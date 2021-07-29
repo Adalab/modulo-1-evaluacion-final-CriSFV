@@ -14,33 +14,41 @@
       height: 14px;
     }
   }
-}
-.header__title {
-  background-image: url("../images/cover.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: auto;
-  color: #ffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  &__principal {
-    font-family: $font_RobotoSlab;
-    text-transform: uppercase;
-    font-size: 42px;
-    width: 15ch;
-    text-align: center;
-    margin: 5px;
+  &__title {
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__principal {
+      font-family: $font_RobotoSlab;
+      text-transform: uppercase;
+      font-size: 42px;
+      width: 15ch;
+      text-align: center;
+      margin: 5px;
+    }
+    &__subtitle {
+      font-family: $font-Roboto;
+      font-size: 15px;
+      line-height: 21px;
+      margin: 5px;
+      text-align: center;
+    }
+    &__buttom {
+      background-color: #ffff;
+      height: 45px;
+      width: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transform: translateY(45px);
+    }
   }
-  &__subtitle {
-    font-family: $font-Roboto;
-    font-size: 15px;
-    line-height: 21px;
-    margin: 5px;
-    text-align: center;
-  }
 }
-
-/*falta el boton*/
