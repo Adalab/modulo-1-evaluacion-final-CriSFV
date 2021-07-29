@@ -1,6 +1,8 @@
 .first {
   margin: 15px;
-
+  @media (min-width: 768px) {
+    margin: 39px;
+  }
   &__tip {
     margin-top: 30px;
     color: #8ccbea;
@@ -10,11 +12,17 @@
   &__title {
     font-size: 24px;
     font-family: $font_RobotoSlab;
+    @media (min-width: 768px) {
+      font-size: 26px;
+    }
   }
   &__section1 {
     margin-top: 15px;
     font-size: 18px;
     font-family: $font_Roboto;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
   &__button {
     margin-top: 30px;
@@ -51,13 +59,19 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(5, 1fr);
   row-gap: 45px;
-
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
   &__title {
     font-family: $font_RobotoSlab;
     font-size: 24px;
     width: 290px;
     text-transform: capitalize;
     margin: auto;
+    @media (min-width: 768px) {
+      grid-column: span 3;
+    }
   }
   &__article {
     width: 184px;
@@ -86,6 +100,9 @@
   margin-bottom: 60px;
   transition: transform ease 1s, background-color ease 1s;
 
+  @media (min-width: 768px) {
+    grid-column: span 3;
+  }
   &__link {
     font-family: $font_Roboto;
     font-size: 20px;
