@@ -1,7 +1,8 @@
 .first {
   margin: 15px;
   @media (min-width: 768px) {
-    margin: 39px;
+    margin-left: 39px;
+    margin-top: 30px;
   }
   &__tip {
     margin-top: 30px;
@@ -22,6 +23,7 @@
     font-family: $font_Roboto;
     @media (min-width: 768px) {
       font-size: 20px;
+      margin-top: 30px;
     }
   }
   &__button {
@@ -36,6 +38,9 @@
     font-size: 20px;
     transition: transform linear 1s, background-color linear 1s,
       font-size linear 1s;
+    @media (min-width: 768px) {
+      margin-bottom: 60px;
+    }
     &__link {
       text-decoration: none;
       color: $color_buttom;
