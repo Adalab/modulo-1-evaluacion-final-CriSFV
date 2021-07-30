@@ -44,6 +44,13 @@
 .footer__menu {
   font-family: $font_Roboto;
   text-transform: uppercase;
+  @media (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 210px;
+  }
 }
 .footer__menu__social,
 .footer__menu__link {
@@ -53,11 +60,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .footer__menu__two {
-  margin-top: 30px;
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    margin-bottom: 105px;
+    text-align: center;
+  }
+}
+
+.footer__menu__one {
+  @media (min-width: 768px) {
+    margin-bottom: 45px;
+    width: 50%;
+    text-align: center;
+  }
 }
 .footer__copy {
   font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .footer__all {
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .footer__copy__love {
+    width: 33.33%;
+  }
 }
