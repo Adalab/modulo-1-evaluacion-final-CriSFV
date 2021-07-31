@@ -1,5 +1,22 @@
 $font_Roboto: "Roboto", sans-serif;
 $font_RobotoSlab: "Roboto Slab", serif;
-
 $color_buttom: #f26002;
 $color_buttom2: #ffffff;
+
+@keyframes giro {
+  from {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(270deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
