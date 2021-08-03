@@ -1,10 +1,10 @@
 .footer {
-  background-color: #304268;
+  background-color: #0271bc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $color_buttom2;
+  color: black;
   line-height: 30px;
   font-family: $font_Roboto;
   text-align: center;
@@ -61,7 +61,7 @@
   &__link {
     text-decoration: none;
     font-family: $font_Roboto;
-    color: $color_buttom2;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
